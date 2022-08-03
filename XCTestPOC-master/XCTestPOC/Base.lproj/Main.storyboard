@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XCTestPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ev6-we-Wtt">
+                                <rect key="frame" x="0.0" y="328" width="414" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="van-zb-Ici">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ejf-SS-GBO">
+                                        <rect key="frame" x="30" y="50" width="354" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBC-bB-v0V">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                                <color key="backgroundColor" red="0.084082536400000005" green="0.70056778190000002" blue="0.46223568920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Iue-Cz-6Yi"/>
+                                                </constraints>
+                                                <state key="normal" title="Gerar Número">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="generateNumberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ll5-5b-0gh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzS-cW-Rnv">
+                                                <rect key="frame" x="0.0" y="60" width="354" height="50"/>
+                                                <color key="backgroundColor" red="0.40336671470000002" green="0.53780931229999995" blue="0.91746515039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Gerar Cor">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="generateColorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebY-dG-f88"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ejf-SS-GBO" firstAttribute="top" secondItem="van-zb-Ici" secondAttribute="bottom" constant="50" id="JqF-6a-0cj"/>
+                                    <constraint firstAttribute="trailing" secondItem="van-zb-Ici" secondAttribute="trailing" constant="16" id="K0U-Iz-TyZ"/>
+                                    <constraint firstItem="van-zb-Ici" firstAttribute="top" secondItem="Ev6-we-Wtt" secondAttribute="top" id="KE3-1Z-Y8Z"/>
+                                    <constraint firstAttribute="height" constant="240" id="WC7-35-AL5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ejf-SS-GBO" secondAttribute="trailing" constant="30" id="ket-pD-CaS"/>
+                                    <constraint firstItem="van-zb-Ici" firstAttribute="leading" secondItem="Ev6-we-Wtt" secondAttribute="leading" constant="16" id="qAF-Hy-N03"/>
+                                    <constraint firstItem="Ejf-SS-GBO" firstAttribute="leading" secondItem="Ev6-we-Wtt" secondAttribute="leading" constant="30" id="qnY-Pm-JaX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ev6-we-Wtt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eq1-yP-0Ft"/>
+                            <constraint firstItem="Ev6-we-Wtt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ItS-FI-hqt"/>
+                            <constraint firstAttribute="trailing" secondItem="Ev6-we-Wtt" secondAttribute="trailing" id="YNP-56-XE9"/>
+                            <constraint firstItem="Ev6-we-Wtt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wvH-57-LYS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultTextLabel" destination="van-zb-Ici" id="kds-fP-Qch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
